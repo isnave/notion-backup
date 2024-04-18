@@ -10,9 +10,9 @@ const blocks = [
     // Find the page block ID by either:
     // 1. Copying the alphanumeric part at the end of the Notion page URL
     //    and separate it with dashes in the same format as below
-    //    (number of characters between dashes: 8-4-4-4-12)
+    //    (number of characters between dashes: 8-4-4-4-12)309cb955-4d61-4e86-8ccd-b74166268a39
     // 2. Inspecting network requests in the DevTools
-    id: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+    id: '309cb955-4d61-4e86-8ccd-b74166268a39',
     // Find the space ID associated with a block by running this in the DevTools
     // Console while on the page you want to export:
     // $('img[src*="spaceId="]').src.replace(/^.+&spaceId=([^&]+)&.+$/, '$1')
@@ -20,7 +20,7 @@ const blocks = [
     // Choose a directory name for your export to appear in the `exports` folder
     dirName: 'notion-page-a',
     // Should all of the subpages also be exported?
-    recursive: false,
+    recursive: true,
   },
 ];
 
